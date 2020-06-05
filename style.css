@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+    padding:0px;
+    font-family: 'Special Elite', sans-serif;
+    font-size: 20px;
+    
+}
+
+html {
+    background-image: url("https://i.pinimg.com/originals/a7/4b/97/a74b9764829a395d6a2924a0f6257095.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*NAVBAR*/
+h1 {
+    font-size: 3em;
+    color: #FDEBBE;
+    opacity: 0.8;
+    margin:  auto 1em;
+   
+}
+
+
+.navbar {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    background-image: url("./nav.png");
+    background-size: cover;
+    background-repeat: none;
+    z-index: 3;
+    top: 0;
+    
+}
+
+.navbar a, p {
+    margin: 0.5em 0em 0.2em 0em; 
+    text-decoration: none;
+    color: #FDEBBE;
+    opacity: 0.8;
+}
+
+/*MAIN CONTENT*/
+
+.main {
+     margin: 10em auto;
+}
+
+.container {
+   margin: 2em 2em;
+   padding: .2em .2em .2em 1em;
+   color: #FDEBBE;
+   
+}
+
+
+
+#who, #events, #finds, #members {
+    background-size: cover;
+    background-repeat: none;
+    padding: .2em .2em .2em 1em;
+}
+
+/*WHO*/
+#who {
+    background-image: url("./container-title.png"); 
+    background-position: center;
+    
+}
+
+.inside-container {
+    display: inline-flex;
+   
+}
+
+#findings {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.inside-container p {
+    color: black;
+    margin: 1em;
+    top: 0;
+    left: 0;
+    font-size: 2em;
+}
+
+/* #who-pin {
+    position: relative;
+    width: 3em;
+    top: -90%;
+    left: 40%;
+} */
+
+.sepia {
+    filter: sepia(100%);
+    margin: 1em;
+    padding: 2em 1em;
+    background-color: #FAF7EF;
+    width: 30vw;
+    align-self: center;
+    margin: 0px auto;
+}
+
+/*EVENTS*/
+#events {
+    background-image: url("./container-title.png"); 
+
+
+    
+}
+
+
+/*FINDS*/
+#finds {
+    background-image: url("./container-title.png"); 
+    
+}
+
+
+/*MEMBERS*/
+#members {
+    background-image: url("./container-title.png"); 
+    
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .inside-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .inside-container p {
+        color: black;
+        margin: 1em;
+        top: 0;
+        left: 0;
+        font-size: 1em;
+        justify-items: center;
+    }
+
+    .sepia {
+        width: 25vw;
+        align-self: center;
+        margin: 0px auto;
+    }
+    
+    h1 {
+        font-size: 2em;
+        padding: 0.5em;
+    }
+
+
+    .navbar {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        background-image: url("./nav.png");
+        background-size: cover;
+        background-repeat: none;
+        z-index: 3;
+    }
+    
+    .navbar a, p {
+        margin: 0em 0em 0em 0em; 
+        
+    }
+  }
